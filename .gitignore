@@ -1,0 +1,17 @@
+# Ignore word documents
+*.doc
+*.docx
+
+# Ignore compiled PDFs. Don't forget to 'push --force' a copy to view on Github
+*.pdf
+
+# Ignore Reference Folders
+OldResumes/*
+ReferenceResumes/*
+
+# Ignore build artifacts
+*.log
+*.aux
+
+# Don't publish contact info
+contactInfo_private.txt
