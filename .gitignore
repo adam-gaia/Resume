@@ -2,7 +2,7 @@
 *.doc
 *.docx
 
-# Ignore compiled PDFs. Don't forget to 'push --force' a copy to view on Github
+# Ignore compiled PDFs. Don't forget to 'git add -f' the github preview copy
 *.pdf
 
 # Ignore Reference Folders
