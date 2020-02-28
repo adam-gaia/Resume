@@ -11,6 +11,7 @@ open adamgaia_githubVersion.pdf
 The Makefile builds two copies of my resume:
 * The version with my phone number + email that I submit to job apps. Ignored by git.
 * The version on this repo without my contact info. The preview of this version is at the bottom of this readme.
+
 When forking this repo for your own resume, please create a file called './contactInfo_private.txt' and add contact info you may not want publicly available.
 
 
