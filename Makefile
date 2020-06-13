@@ -16,6 +16,7 @@ print: $(inputFile) github
 	@rm contactInfo.txt || echo "Error, please make clean before publishing" # Clear contact info
 	@grep --silent "Output written on ${printOutputName}.pdf (1 page," "${printOutputName}.log" || echo "Error, print resume is more than one page"
 	@echo "Ready to print $(printOutputName).pdf"
+	open $(printOutputName).pdf
 
 
 # Compile a PDF without my contact info for viewing on Github.
