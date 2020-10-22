@@ -2,6 +2,7 @@
 ```
 brew cask install basictex # 'pdflatex' tool to render PDFs from LaTeX
 brew install imagemagick # Convert from pdf to jpg for this README
+tlmgr install xcolor xparse multicol enumitem # Install LaTeX packages
 git clone https://github.com/adam-gaia/Resume.git
 make
 open adamgaia_githubVersion.pdf
