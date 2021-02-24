@@ -33,3 +33,12 @@ github: $(inputFile)
 
 clean:
 	rm -rf *.pdf *.jpg *.log *.aux contactInfo.txt > /dev/null 2>&1
+
+
+# Resume tailored for Double River
+doubleriver:
+	@cat ./contactInfo_private.txt > ./contactInfo.txt # Copy *sensitive* info to be included in the makefile
+	pdflatex -jobname=adam_gaia_double_river resume_double_river_version.tex > /dev/null 2>&1
+	@rm contactInfo.txt || echo "Error, please make clean before publishing" # Clear contact info
+	@grep --silent "Output written on adam_gaia_double_river.pdf (1 page," "adam_gaia_double_river.log" || echo "Error, print resume is more than one page"
+	open adam_gaia_double_river.pdf
