@@ -61,23 +61,47 @@
 % Work Experience
 % --------------------------------------------------
 \sepperator{7in}{titlebox}{titlebox!40}{Work Experience}
-
-
-% Sarcos Robotics
-\noindent \textbf{Software Engineering Intern} \hfill  November 2019 to present \\
-\textit{Sarcos Robotics, Guardian XO Team}
+\textbf{Software Engineer - Sarcos Robotics} \hfill  November 2019 (intern) to present (full time)
 \begin{itemize}
-    \item Reduced CI run time from 40 minutes to 3 minutes by removing redundancy and parallelizing the build process
-    \item Lead developer of an on-robot, service-queuing daemon. Created and containerized services using Docker
-    \item Wrote/optimized/debugged c++ code for realtime robot operating system
-    \item Automated robot bring-up, software update, and code compile processes \\
+    \item Robot Service Manager
+	\begin{itemize}
+		\item Built and maintained an on-robot daemon that provided a REST API for interacting with services running on the robots
+
+		\item Reduced the firmware update process from 1 hour to 10 minutes by building a CD pipeline distribute firmware to robots without human interaction
+
+		\item Worked closely with test engineers to create internal tools for starting/stopping robot operation
+
+		\item Used websockets to stream filtered runtime logs to robot deploy stations during robot operation
+
+		\item Created and containerized on-robot services as dockerized python apps
+
+		\item Wrote/tested/debugged python code
+	\end{itemize}
+	\vspace{1mm}
+
+	\item Reduced the on-robot team's main codebase CI runtime from 40 minutes to 5 minutes by removing redundancy and running jobs in parallel
+
+	\item Created a pipeline to transfer 100s of GB runtime logs from the robot to cloud storage after operation
+
+	\item Worked with test engineers to debug and resolve robot bring-up issues on the test floor
+
+	\item Wrote Ansible scripts to provision robot deploy stations (linux computers)
+
+    %\item Lead developer of an on-robot, service-queuing daemon. Created and containerized services using Docker
+
+    %\item Wrote/optimized/debugged c++ code for realtime robot operating system
+
+    %\item Automated robot bring-up, software update, and code compile processes \\
 \end{itemize}
 
+
+\vspace{2mm}
+
 % Uintah Scientific Computing
-\noindent \textbf{Scientific Computing Intern} \hfill  August 2017 to November 2019 \\
-\textit{University of Utah Engineering Department, Uintah Project (PDE-solving simulation software)}
+\noindent \textbf{Scientific Computing Intern - University of Utah} \hfill  August 2017 to November 2019
+%\textit{University of Utah Engineering Department, Uintah Project (PDE-solving simulation software)}
 \begin{itemize}
-    \item Parallelized a post-processing script, reducing run-time from 18 hours to 1 minute with 400+ GB input files
+    \item Parallelized a post-processing script, reducing run-time from 18 hours to 3 minutes with 400+ GB input files
     \item Created Bash scripts to automate the queuing of remote simulations. Added automatic job error feedback
     %\item Created a Python script to recursively compare tree-structured simulation spec files for similar nodes
     \item Used Linux command line to run simulations on remote high-performance computing centers
@@ -88,41 +112,19 @@
 
 
 % --------------------------------------------------
-% Education
-% --------------------------------------------------
-\sepperator{7in}{titlebox}{titlebox!40}{Education}
-
-\noindent \textbf{B.S. Computer Science} - 3.2 GPA \hfill April 2022 \\
-\textit{University of Utah - Salt Lake City, Utah}
-\begin{itemize}
-\begin{multicols}{2}
-    \item Object-Oriented Programming
-    \item Software Practice 1 and 2
-    \item Algorithms and Data Structures
-    \item Engineering Probability and Statistics
-    \item Professional Communication for Engineers
-    \item Scientific Computing
-    \item Numerical Methods for Engineering Systems
-    \item Computer Organization and Architecture
-    \item Intro to Electrical Engineering
-    \item Calculus 1, 2, and 3
-    \item Linear Algebra and Differential Equations
-    \item Advanced Programming for Comp. Design Problems
-\end{multicols}
-\end{itemize}
-
-
-% --------------------------------------------------
 % Computer Science and Engineering Projects
 % --------------------------------------------------
 \sepperator{7in}{titlebox}{titlebox!40}{Computer Science and Engineering Projects}
 \begin{itemize}
-    \item \textbf{Parallel Laplace Solver:} \textit{Final project for an extracurricular openMP, openACC, and MPI bootcamp}
+    \item \textbf{4-Node Raspberry PI Server:}
+    \textit{Headless home server built by linking 4 raspberry pi (linux) computers}
     \begin{itemize}
-        \item Developed code remotely on a high-performance computing center
-        \item Used MPI to scale C code for 100 processors
+        \item Wrote Ansible scripts to provision nodes and automate server administration tasks
+        \item Used docker to run containerized applications on the server
     \end{itemize}
-    \vspace{4mm}
+\end{itemize}
+\vspace{2mm}
+\begin{itemize}
     \item \textbf{Spreadsheet Application:}
     \textit{Semester-long project to build an application from scratch in C\#}
     \begin{itemize}
@@ -130,14 +132,7 @@
         \item Used hash maps to keep track of cell dependencies to optimize formula calculation speed
         \item Received an A on the project
     \end{itemize}
-    \vspace{4mm}
-    \item \textbf{Air-Powered Train Simulation:}
-         \textit{Numerical methods simulation of an air-powered train using MATLAB}
-         \begin{itemize}
-             \item Created a program to solve for a train design to maximize speed without overshooting the destination
-             \item Worked as a team to abstract a physical model into a modular set of functions
-         \end{itemize}
-         \vspace{4mm}
+\vspace{2mm}
     \item \textbf{Ping-Pong Ball Launcher:}
         \textit{Project goal was to hit targets ranging between .5-1 meter away}
         \begin{itemize}
@@ -149,14 +144,39 @@
 
 
 % --------------------------------------------------
+% Education
+% --------------------------------------------------
+\sepperator{7in}{titlebox}{titlebox!40}{Education}
+
+\noindent \textbf{B.S. Computer Science} - 3.2 GPA \hfill on hold \\
+\textit{University of Utah}
+\begin{itemize}
+\begin{multicols}{2}
+    \item Object-Oriented Programming
+    \item Software Practice 1 and 2
+    \item Algorithms and Data Structures
+    \item Engineering Probability and Statistics
+    \item Professional Communication for Engineers
+    \item Scientific Computing
+    %\item Numerical Methods for Engineering Systems
+    \item Computer Organization and Architecture
+    %\item Intro to Electrical Engineering
+    \item Calculus 1, 2, and 3
+    \item Linear Algebra and Differential Equations
+    \item Advanced Programming for Comp. Design Problems
+\end{multicols}
+\end{itemize}
+
+
+% --------------------------------------------------
 % Skills
 % --------------------------------------------------
 \sepperator{7in}{titlebox}{titlebox!40}{Skills}
 \begin{itemize}
-    \item \textbf{Primary Languages:} C++, Python, Bash
-    \item \textbf{Secondary Languages:} C, C\#, Java
-    \item \textbf{Tools:} Git, unit tests, CI/CD, Docker, ssh, MPI, Unix/Linux, Arduino microcontrollers, \LaTeX
-    \item \textbf{Soft Skills:}  Outgoing team player, time management, great oral and written communication skills
+    \item \textbf{Primary Languages:} Python, C++, Bash
+    \item \textbf{Secondary Languages:} Rust, C\#, Java
+    \item \textbf{Tools:} Git, unit tests, integration tests, CI/CD, Docker, Unix/Linux, code review, \LaTeX %Arduino microcontrollers
+    \item \textbf{Soft Skills:}  Outgoing team player, time management, oral and written communication skills
 \end{itemize}
 
 
@@ -175,7 +195,6 @@
 %     \item ...
 % \end{multicols}
 % \end{itemize}
-
 
 
 
